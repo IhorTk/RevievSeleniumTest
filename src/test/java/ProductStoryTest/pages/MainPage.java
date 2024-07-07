@@ -30,14 +30,7 @@ public class MainPage extends BasePage{
     @FindBy(css = "#itemc[onclick=\"byCat('monitor')\"]")
     public WebElement sortItemMonitor;
 
-    @FindBy(css = "#article.card-text");
-    public WebElement articleCard;
 
-    @FindBy(css = ".page-link#next2")
-    public WebElement nexPageButton;
-
-    @FindBy(css = ".page-link#prev2")
-    public WebElement prevPageButton;
 
 
 
