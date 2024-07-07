@@ -7,8 +7,10 @@ import org.openqa.selenium.support.FindBy;
 public class InternalPage extends BasePage{
 
     public InternalPage(TestContext context) {
+
         super(context);
     }
+
     @FindBy(css = "#navbarExample")
     public WebElement navigationButtonPanel;
 
@@ -26,6 +28,15 @@ public class InternalPage extends BasePage{
 
     @FindBy(css = ".page-link#prev2")
     public WebElement prevPageButton;
+
+    @FindBy(css = "#nameofuser")
+    public WebElement welcomeText;
+
+
+
+    public String getWelcomeText(){
+        return welcomeText.getText();
+    }
 
 
 

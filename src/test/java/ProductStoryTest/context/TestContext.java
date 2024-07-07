@@ -1,6 +1,7 @@
 package ProductStoryTest.context;
 
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -11,7 +12,8 @@ public class TestContext {
     public WebDriverWait wait;
     public Actions actions;
     public JavascriptExecutor js;
-    public Assertions assertions;
+    public Alert alert;
+
 
 
 }

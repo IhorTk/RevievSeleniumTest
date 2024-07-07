@@ -4,7 +4,7 @@ import ProductStoryTest.context.TestContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MainPage extends BasePage{
+public class MainPage extends InternalPage{
 
     public MainPage(TestContext context) {
         super(context);
@@ -29,6 +29,8 @@ public class MainPage extends BasePage{
 
     @FindBy(css = "#itemc[onclick=\"byCat('monitor')\"]")
     public WebElement sortItemMonitor;
+
+
 
 
 

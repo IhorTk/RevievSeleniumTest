@@ -8,12 +8,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class DriverFactory {
     public static WebDriver get(){
         String browser = ConfigurationReader.get("browser");
         WebDriver driver;
         switch (browser){
-            case "crome" ->{
+            case "chrome" ->{
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 if(ConfigurationReader.get("headless").toLowerCase().equals("true")){
@@ -27,6 +29,7 @@ public class DriverFactory {
                 driver = new ChromeDriver(options);
                 if(ConfigurationReader.get("maximize").toLowerCase().equals("true")){
                     driver.manage().window().maximize();
+                    driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
                 }
                 return driver;
             }
@@ -37,7 +40,7 @@ public class DriverFactory {
             }
             case "edge" ->{
                 if(!System.getProperty("os.name").toLowerCase().equals("windows")){
-                    throw new WrongThreadException("Ваша операционная система не поддерживает Edge")
+                    throw new WrongThreadException("Ваша операционная система не поддерживает Edge");
                 }
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();

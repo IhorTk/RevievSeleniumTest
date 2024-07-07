@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/ProbaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/SortingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/context/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/context/TestContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resurses/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GIT/ReviewSeleniumTest/src/test/resurses&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor": "Run",
+    "JUnit.CreateNewUserTest.createNewUserTest.executor": "Run",
+    "JUnit.CreateNewUserTest.executor": "Run",
+    "JUnit.LoginTest.normalLoginTest.executor": "Run",
+    "JUnit.ProbaTest.getPropertys.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GIT/ReviewSeleniumTest/src/test/resurses"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\resurses" />
@@ -52,6 +67,96 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\resurses" />
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateNewUserTest">
+    <configuration name="CreateNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CreateNewUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewUserTest.createNewUserFalseDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CreateNewUserTest" />
+      <option name="METHOD_NAME" value="createNewUserFalseDataTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewUserTest.createNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CreateNewUserTest" />
+      <option name="METHOD_NAME" value="createNewUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.normalLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
+      <option name="METHOD_NAME" value="normalLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProbaTest.getPropertys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.ProbaTest" />
+      <option name="METHOD_NAME" value="getPropertys" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreateNewUserTest" />
+        <item itemvalue="JUnit.LoginTest.normalLoginTest" />
+        <item itemvalue="JUnit.CreateNewUserTest.createNewUserFalseDataTest" />
+        <item itemvalue="JUnit.CreateNewUserTest.createNewUserTest" />
+        <item itemvalue="JUnit.ProbaTest.getPropertys" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
