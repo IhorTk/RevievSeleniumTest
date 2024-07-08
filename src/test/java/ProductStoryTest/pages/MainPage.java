@@ -43,6 +43,15 @@ public class MainPage extends BasePage{
     @FindBy(css = "#nameofuser")
     public WebElement welcomeText;
 
+    @FindBy(css = "#cartur")
+    public WebElement goToCart;
+
+
+    public CartPage getGoToCart(){
+        goToCart.click();
+        return new CartPage(context);
+    }
+
     public String getWelcomeText(){
         return welcomeText.getText();
     }
@@ -50,6 +59,7 @@ public class MainPage extends BasePage{
     public int amountArticle(){
         return articlesCards.size();
     }
+
     public MainPage sortingArticles(String nameArtikles){
 
         switch (nameArtikles.toLowerCase()){
@@ -65,10 +75,11 @@ public class MainPage extends BasePage{
         context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(0)));
         return new MainPage(context);
     }
+
     public int amountArticleAll(){
         int amountAll=amountArticle();
        while (new InternalPage(context).nextPageButton.isDisplayed()){
-           new InternalPage(context).nextPageButton.click();
+           new InternalPage(context).getNextPageButton();
            context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(0)));
            amountAll= amountAll+amountArticle();
        }
