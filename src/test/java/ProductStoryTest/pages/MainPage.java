@@ -1,8 +1,13 @@
 package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class MainPage extends BasePage{
 
@@ -23,6 +28,9 @@ public class MainPage extends BasePage{
     @FindBy(css = ".list-group-item#cat")
     public WebElement categoriesButton;
 
+    @FindBy(css = "a.hrefch")
+    public List<WebElement> articlesCards;
+
     @FindBy(css = "#itemc[onclick=\"byCat('phone')\"]")
     public WebElement sortItemPhone;
 
@@ -38,6 +46,38 @@ public class MainPage extends BasePage{
     public String getWelcomeText(){
         return welcomeText.getText();
     }
+
+    public int amountArticle(){
+        return articlesCards.size();
+    }
+    public MainPage sortingArticles(String nameArtikles){
+
+        switch (nameArtikles.toLowerCase()){
+            case "phone" ->{
+                sortItemPhone.click();
+            }
+            case "monitor" ->{
+                sortItemMonitor.click();
+            }
+            case "notebook" ->
+                sortItemNotebook.click();
+        }
+        context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(0)));
+        return new MainPage(context);
+    }
+    public int amountArticleAll(){
+        int amountAll=amountArticle();
+       while (new InternalPage(context).nextPageButton.isDisplayed()){
+           new InternalPage(context).nextPageButton.click();
+           context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(0)));
+           amountAll= amountAll+amountArticle();
+       }
+       return amountAll;
+    }
+
+
+
+
 
 
 

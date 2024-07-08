@@ -29,26 +29,23 @@ public class CreationUserPage extends BasePage{
 
 
 
-    public MainPage createUserBase(){
+    public String createUserBase(){
         return createUserAs(ConfigurationReader.get("create_login"),ConfigurationReader.get("create_password"));
     }
 
 
-    public MainPage createUserAs(String login, String password) {
+    public String createUserAs(String login, String password) {
         createUser(login, password);
         context.wait.until(ExpectedConditions.alertIsPresent());
         context.alert = context.driver.switchTo().alert();
-        if(context.alert.getText().equals(ConfigurationReader.get("alertNewUserOk"))) {
+        String alertTextNewUser=context.alert.getText();
+        if(alertTextNewUser.equals(ConfigurationReader.get("alertNewUserOk"))) {
             context.alert.accept();
-            new LoginPage(context).loginAs(login,password);
-        }
-        if(context.alert.getText().equals(ConfigurationReader.get("alertNewUserNo"))){
+        }else{
             context.alert.accept();
             closeCreateNewUser.click();
-            return new MainPage(context);
         }
-
-        return null;
+        return alertTextNewUser;
     }
 
 

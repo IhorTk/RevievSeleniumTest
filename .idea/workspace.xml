@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MainPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/UserCreationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/UserCreationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/UserCreationPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/ProbaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/ProbaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resurses/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,24 +43,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreateNewUserTest.createNewUserTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.CreateNewUserTest.createUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreateNewUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.inCorrectUserNameTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.inCorrectUserPasswordTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.normalLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProbaTest.getP.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProbaTest.getPropertys.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GIT/ReviewSeleniumTest/src/test/resurses&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.CreateNewUserTest.createNewUserAnyDataTest.executor": "Run",
+    "JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor": "Run",
+    "JUnit.CreateNewUserTest.createNewUserTest.executor": "Debug",
+    "JUnit.CreateNewUserTest.createUserTest.executor": "Run",
+    "JUnit.CreateNewUserTest.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.inCorrectUserNameTest.executor": "Run",
+    "JUnit.LoginTest.inCorrectUserPasswordTest.executor": "Run",
+    "JUnit.LoginTest.normalLoginTest.executor": "Run",
+    "JUnit.MainPageTest.amountArticleAllTest.executor": "Run",
+    "JUnit.MainPageTest.amountArticleToPage.executor": "Run",
+    "JUnit.MainPageTest.sortingArticleTest.executor": "Run",
+    "JUnit.MessageSuportTest.executor": "Run",
+    "JUnit.MessageSuportTest.messageSuportTestAny.executor": "Run",
+    "JUnit.ProbaTest.getP.executor": "Run",
+    "JUnit.ProbaTest.getPropertys.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GIT/ReviewSeleniumTest/src/test/resurses"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\resurses" />
@@ -70,8 +77,8 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateNewUserTest">
-    <configuration name="CreateNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainPageTest">
+    <configuration name="MainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -80,13 +87,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CreateNewUserTest" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateNewUserTest.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.amountArticleAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +102,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CreateNewUserTest" />
-      <option name="METHOD_NAME" value="createUserTest" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
+      <option name="METHOD_NAME" value="amountArticleAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.amountArticleToPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -111,51 +118,51 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
+      <option name="METHOD_NAME" value="amountArticleToPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest.sortingArticleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
+      <option name="METHOD_NAME" value="sortingArticleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageSuportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MessageSuportTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.inCorrectUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
-      <option name="METHOD_NAME" value="inCorrectUserNameTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.inCorrectUserPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
-      <option name="METHOD_NAME" value="inCorrectUserPasswordTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateNewUserTest" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.CreateNewUserTest.createUserTest" />
-        <item itemvalue="JUnit.LoginTest.inCorrectUserPasswordTest" />
-        <item itemvalue="JUnit.LoginTest.inCorrectUserNameTest" />
+        <item itemvalue="JUnit.MainPageTest" />
+        <item itemvalue="JUnit.MainPageTest.amountArticleAllTest" />
+        <item itemvalue="JUnit.MainPageTest.sortingArticleTest" />
+        <item itemvalue="JUnit.MainPageTest.amountArticleToPage" />
+        <item itemvalue="JUnit.MessageSuportTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,16 +176,5 @@
       <updated>1719928734626</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

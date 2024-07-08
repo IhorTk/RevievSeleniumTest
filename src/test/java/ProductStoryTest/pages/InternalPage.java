@@ -20,11 +20,10 @@ public class InternalPage extends BasePage{
     @FindBy(xpath = "//*[@id=\"fotcont\"]//h4[contains(text(),' PRODUCT STORE')]")
     public WebElement logBrandFooter;
 
-    @FindBy(css = "a.hrefch")
-    public WebElement articleCard;
+
 
     @FindBy(css = ".page-link#next2")
-    public WebElement nexPageButton;
+    public WebElement nextPageButton;
 
     @FindBy(css = ".page-link#prev2")
     public WebElement prevPageButton;
