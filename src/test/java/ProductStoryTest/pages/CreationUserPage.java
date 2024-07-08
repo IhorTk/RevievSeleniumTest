@@ -2,15 +2,16 @@ package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
 import ProductStoryTest.utils.ConfigurationReader;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CreationUserPage extends BasePage{
+
     public CreationUserPage(TestContext context) {
         super(context);
     }
+
     @FindBy(css = "#signin2")
     public WebElement signInButton;
 
@@ -28,7 +29,7 @@ public class CreationUserPage extends BasePage{
 
 
 
-    public MainPage createNewUserBase(){
+    public MainPage createUserBase(){
         return createUserAs(ConfigurationReader.get("create_login"),ConfigurationReader.get("create_password"));
     }
 

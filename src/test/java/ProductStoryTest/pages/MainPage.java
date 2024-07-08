@@ -4,19 +4,21 @@ import ProductStoryTest.context.TestContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MainPage extends InternalPage{
+public class MainPage extends BasePage{
+
 
     public MainPage(TestContext context) {
         super(context);
     }
+
     @FindBy (css = ".carousel-inner")
     public WebElement carouselInner;
 
     @FindBy (css = ".carousel-control-next-icon")
-    public WebElement caoruselNextIcon;
+    public WebElement carouselNextIcon;
 
     @FindBy(css = "carousel-control-prev-icon")
-    public WebElement caoruselPrevIcon;
+    public WebElement carouselPrevIcon;
 
     @FindBy(css = ".list-group-item#cat")
     public WebElement categoriesButton;
@@ -29,6 +31,13 @@ public class MainPage extends InternalPage{
 
     @FindBy(css = "#itemc[onclick=\"byCat('monitor')\"]")
     public WebElement sortItemMonitor;
+
+    @FindBy(css = "#nameofuser")
+    public WebElement welcomeText;
+
+    public String getWelcomeText(){
+        return welcomeText.getText();
+    }
 
 
 

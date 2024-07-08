@@ -9,4 +9,9 @@ public class ProbaTest {
      int time= (int) Long.parseLong(ConfigurationReader.get("timeout"));
      System.out.println("time = " + time);
  }
+ @Test
+    public void getP(){
+     String vv=ConfigurationReader.get("alertNotUserExist");
+     System.out.println("vv = " + vv);
+ }
 }

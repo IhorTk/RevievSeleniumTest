@@ -29,14 +29,7 @@ public class InternalPage extends BasePage{
     @FindBy(css = ".page-link#prev2")
     public WebElement prevPageButton;
 
-    @FindBy(css = "#nameofuser")
-    public WebElement welcomeText;
 
-
-
-    public String getWelcomeText(){
-        return welcomeText.getText();
-    }
 
 
 
