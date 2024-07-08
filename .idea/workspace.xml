@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/ArticlePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/ProbaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/SortingTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resurses/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,39 +36,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JUnit.CartPageTest.adaArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addOneArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addPhoneToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addThreeArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserAnyDataTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserTest.executor": "Debug",
-    "JUnit.CreateNewUserTest.createUserTest.executor": "Run",
-    "JUnit.CreateNewUserTest.executor": "Run",
-    "JUnit.LoginTest.executor": "Run",
-    "JUnit.LoginTest.inCorrectUserNameTest.executor": "Run",
-    "JUnit.LoginTest.inCorrectUserPasswordTest.executor": "Run",
-    "JUnit.LoginTest.normalLoginTest.executor": "Run",
-    "JUnit.MainPageTest.amountArticleAllTest.executor": "Run",
-    "JUnit.MainPageTest.amountArticleToPage.executor": "Run",
-    "JUnit.MainPageTest.executor": "Run",
-    "JUnit.MainPageTest.sortingArticleTest.executor": "Run",
-    "JUnit.MessageSuportTest.executor": "Run",
-    "JUnit.MessageSuportTest.messageSuportTestAny.executor": "Run",
-    "JUnit.ProbaTest.getP.executor": "Run",
-    "JUnit.ProbaTest.getPropertys.executor": "Run",
-    "JUnit.ProbaTest.searhArt.executor": "Run",
-    "Maven.ReviewSeleniumTest [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GIT/ReviewSeleniumTest/src/test/resurses"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.CartPageTest.adaArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addOneArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addPhoneToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addThreeArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserAnyDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CreateNewUserTest.createUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.inCorrectUserNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.inCorrectUserPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.normalLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.amountArticleAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.amountArticleToPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.sortingArticleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageSuportTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageSuportTest.messageSuportTestAny.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.getP.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.getPropertys.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.searhArt.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ReviewSeleniumTest [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GIT/ReviewSeleniumTest/src/test/resurses&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\resurses" />
@@ -84,7 +78,7 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartPageTest">
+  <component name="RunManager" selected="JUnit.CartPageTest.addPhoneToCartTest">
     <configuration name="CartPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
@@ -166,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartPageTest.addPhoneToCartTest" />
         <item itemvalue="JUnit.CartPageTest" />
         <item itemvalue="JUnit.CartPageTest.addThreeArticleToCartTest" />
-        <item itemvalue="JUnit.CartPageTest.addPhoneToCartTest" />
         <item itemvalue="JUnit.CartPageTest.addOneArticleToCartTest" />
         <item itemvalue="JUnit.CartPageTest.adaArticleToCartTest" />
       </list>
