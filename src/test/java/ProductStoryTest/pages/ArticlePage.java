@@ -30,8 +30,4 @@ public class ArticlePage extends BasePage {
             }
         }
     }
-
-    //notebook=MacBook Pro -1100
-    //phone=Samsung galaxy s7 - 800
-    //monitor=Apple monitor 24 - 400
 }

@@ -54,10 +54,10 @@ public class CartPage extends BasePage {
         }
     }
 
-    public CartPage remoteArticleFromCart(String nameArticle){
-        int count=0;
-        for(WebElement order:rowsListOrdersTable){
-            if (order.getText().contains(nameArticle)){
+    public CartPage remoteArticleFromCart(String nameArticle) {
+        int count = 0;
+        for (WebElement order : rowsListOrdersTable) {
+            if (order.getText().contains(nameArticle)) {
                 break;
             }
             count++;
@@ -68,12 +68,10 @@ public class CartPage extends BasePage {
     }
 
 
-    public PlaceOrderPage goToPlaceOrder(){
+    public PlaceOrderPage goToPlaceOrder() {
         goPlaceOrderButton.click();
         return new PlaceOrderPage(context);
     }
-
-
 
 
 }

@@ -52,7 +52,6 @@ public class MainPage extends BasePage {
     public List<WebElement> articlesCards;
 
 
-
     public CartPage getGoToCart() {
         goToCart.click();
         context.wait.until(ExpectedConditions.visibilityOfAllElements(new CartPage(context).rowsListOrdersTable));
@@ -93,11 +92,7 @@ public class MainPage extends BasePage {
         nextPageButton.click();
     }
 
-    public void getPrevPageButton() {
-        prevPageButton.click();
-    }
-
-    public CartPage getGoToCartFast(){
+    public CartPage getGoToCartFast() {
         goToCart.click();
         return new CartPage(context);
     }
