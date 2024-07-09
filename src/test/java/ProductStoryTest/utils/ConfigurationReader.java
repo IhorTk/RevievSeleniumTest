@@ -5,12 +5,14 @@ import java.util.Properties;
 
 public class ConfigurationReader {
 
-    private ConfigurationReader(){
+    private ConfigurationReader() {
 
     }
+
     private static Properties properties;
-    static{
-        try{
+
+    static {
+        try {
             String patch = "src/test/resurses/configuration.properties";
             FileInputStream inputStream = new FileInputStream(patch);
 
@@ -18,12 +20,12 @@ public class ConfigurationReader {
             properties.load(inputStream);
 
             inputStream.close();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static String get(String keyName){
+    public static String get(String keyName) {
         return properties.getProperty(keyName);
     }
 }

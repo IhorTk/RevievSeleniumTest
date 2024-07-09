@@ -1,14 +1,11 @@
 package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
-import ProductStoryTest.utils.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
 
-public class ArticlePage extends BasePage{
+public class ArticlePage extends BasePage {
 
     public ArticlePage(TestContext context) {
         super(context);
@@ -20,13 +17,13 @@ public class ArticlePage extends BasePage{
     @FindBy(css = "h2.name")
     public WebElement articleName;
 
-    public void getAddToCart(){
+    public void getAddToCart() {
         articleToCartButton.click();
     }
 
-    public void searchArticle(String nameArticle){
+    public void searchArticle(String nameArticle) {
 
-        for(WebElement article:new MainPage(context).articlesCards) {
+        for (WebElement article : new MainPage(context).articlesCards) {
             if (article.getText().contains(nameArticle)) {
                 article.click();
                 break;

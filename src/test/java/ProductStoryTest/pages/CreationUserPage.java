@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class CreationUserPage extends BasePage{
+public class CreationUserPage extends BasePage {
 
     public CreationUserPage(TestContext context) {
         super(context);
@@ -27,38 +27,29 @@ public class CreationUserPage extends BasePage{
     @FindBy(xpath = "//*[@id=\"signInModal\"]//button[text()='Close']")
     public WebElement closeCreateNewUser;
 
-
-
-    public String createUserBase(){
-        return createUserAs(ConfigurationReader.get("create_login"),ConfigurationReader.get("create_password"));
+    public String createUserBase() {
+        return createUserAs(ConfigurationReader.get("create_login"), ConfigurationReader.get("create_password"));
     }
-
 
     public String createUserAs(String login, String password) {
         createUser(login, password);
         context.wait.until(ExpectedConditions.alertIsPresent());
         context.alert = context.driver.switchTo().alert();
-        String alertTextNewUser=context.alert.getText();
-        if(alertTextNewUser.equals(ConfigurationReader.get("alertNewUserOk"))) {
+        String alertTextNewUser = context.alert.getText();
+        if (alertTextNewUser.equals(ConfigurationReader.get("alertNewUserOk"))) {
             context.alert.accept();
-        }else{
+        } else {
             context.alert.accept();
             closeCreateNewUser.click();
         }
         return alertTextNewUser;
     }
 
-
-    private void createUser(String login, String password){
+    private void createUser(String login, String password) {
         signInButton.click();
         inputNewUserName.sendKeys(login);
         inputNewUserPassword.sendKeys(password);
         okCreateNewUser.click();
     }
-
-
-
-
-
 
 }

@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.allure/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/context/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/context/TestContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/ArticlePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resurses/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,70 +99,7 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartPageTest.addPhoneToCartTest">
-    <configuration name="CartPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartPageTest.adaArticleToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
-      <option name="METHOD_NAME" value="adaArticleToCartTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartPageTest.addOneArticleToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
-      <option name="METHOD_NAME" value="addOneArticleToCartTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartPageTest.addPhoneToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
-      <option name="METHOD_NAME" value="addPhoneToCartTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MainPageTest.sortingArticleTest">
     <configuration name="CartPageTest.addThreeArticleToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
@@ -158,13 +116,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.inCorrectUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
+      <option name="METHOD_NAME" value="inCorrectUserNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.inCorrectUserPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
+      <option name="METHOD_NAME" value="inCorrectUserPasswordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.normalLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
+      <option name="METHOD_NAME" value="normalLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest.sortingArticleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
+      <option name="METHOD_NAME" value="sortingArticleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CartPageTest.addPhoneToCartTest" />
-        <item itemvalue="JUnit.CartPageTest" />
+        <item itemvalue="JUnit.MainPageTest.sortingArticleTest" />
+        <item itemvalue="JUnit.LoginTest.normalLoginTest" />
+        <item itemvalue="JUnit.LoginTest.inCorrectUserNameTest" />
+        <item itemvalue="JUnit.LoginTest.inCorrectUserPasswordTest" />
         <item itemvalue="JUnit.CartPageTest.addThreeArticleToCartTest" />
-        <item itemvalue="JUnit.CartPageTest.addOneArticleToCartTest" />
-        <item itemvalue="JUnit.CartPageTest.adaArticleToCartTest" />
       </list>
     </recent_temporary>
   </component>

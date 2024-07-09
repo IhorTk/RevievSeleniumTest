@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class MessageSupportPage extends BasePage{
+public class MessageSupportPage extends BasePage {
 
     public MessageSupportPage(TestContext context) {
         super(context);
@@ -31,29 +31,26 @@ public class MessageSupportPage extends BasePage{
     public WebElement messageSendClose;
 
 
-   public String messageSupportSendBase(){
-       return messageSupportSendAs(ConfigurationReader.get("user_email"),ConfigurationReader.get("standard_login"),
-               ConfigurationReader.get("contact_message"));
+    public String messageSupportSendBase() {
+        return messageSupportSendAs(ConfigurationReader.get("user_email"), ConfigurationReader.get("standard_login"),
+                ConfigurationReader.get("contact_message"));
 
-   }
+    }
 
-    public String messageSupportSendAs(String emails, String names, String messages){
-       messageSupportSend(emails, names, messages);
-       context.wait.until(ExpectedConditions.alertIsPresent());
-       context.alert=context.driver.switchTo().alert();
-       return context.alert.getText();
+    public String messageSupportSendAs(String emails, String names, String messages) {
+        messageSupportSend(emails, names, messages);
+        context.wait.until(ExpectedConditions.alertIsPresent());
+        context.alert = context.driver.switchTo().alert();
+        return context.alert.getText();
     }
 
 
-    private void messageSupportSend(String email, String name, String message){
+    private void messageSupportSend(String email, String name, String message) {
         contactButton.click();
         userEmail.sendKeys(email);
         userName.sendKeys(name);
         messageText.sendKeys(message);
         messageSendOk.click();
     }
-
-
-
 
 }

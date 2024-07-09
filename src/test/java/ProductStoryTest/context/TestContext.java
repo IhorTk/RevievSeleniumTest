@@ -1,6 +1,5 @@
 package ProductStoryTest.context;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +12,5 @@ public class TestContext {
     public Actions actions;
     public JavascriptExecutor js;
     public Alert alert;
-
-
 
 }
