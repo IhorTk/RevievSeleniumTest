@@ -24,23 +24,9 @@ public class InternalPage extends BasePage {
     public WebElement homeButton;
 
 
-    @FindBy(css = ".page-link#next2")
-    public WebElement nextPageButton;
-
-    @FindBy(css = ".page-link#prev2")
-    public WebElement prevPageButton;
-
     public MainPage getHomeButton() {
         homeButton.click();
         return new MainPage(context);
-    }
-
-    public void getNextPageButton() {
-        nextPageButton.click();
-    }
-
-    public void getPrevPageButton() {
-        prevPageButton.click();
     }
 
 }

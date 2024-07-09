@@ -26,9 +26,6 @@ public class MainPage extends BasePage {
     @FindBy(css = ".list-group-item#cat")
     public WebElement categoriesButton;
 
-    @FindBy(css = "a.hrefch")
-    public List<WebElement> articlesCards;
-
     @FindBy(css = "#itemc[onclick=\"byCat('phone')\"]")
     public WebElement sortItemPhone;
 
@@ -43,6 +40,17 @@ public class MainPage extends BasePage {
 
     @FindBy(css = "#cartur")
     public WebElement goToCart;
+
+    @FindBy(css = ".page-link#next2")
+    public WebElement nextPageButton;
+
+    @FindBy(css = ".page-link#prev2")
+    public WebElement prevPageButton;
+
+
+    @FindBy(css = "a.hrefch")
+    public List<WebElement> articlesCards;
+
 
 
     public CartPage getGoToCart() {
@@ -59,29 +67,39 @@ public class MainPage extends BasePage {
         return articlesCards.size();
     }
 
-    public MainPage sortingArticles(String nameArtikles) {
+    public MainPage sortingArticles(String nameArticles) {
 
-        switch (nameArtikles.toLowerCase()) {
-            case "phone" -> {
-                sortItemPhone.click();
-            }
-            case "monitor" -> {
-                sortItemMonitor.click();
-            }
+        switch (nameArticles.toLowerCase()) {
+            case "phone" -> sortItemPhone.click();
+            case "monitor" -> sortItemMonitor.click();
             case "notebook" -> sortItemNotebook.click();
+            default -> throw new IllegalStateException("Unexpected value: " + nameArticles.toLowerCase());
         }
-        context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(articlesCards.size()-1)));
+        context.wait.until(ExpectedConditions.stalenessOf(articlesCards.getLast()));
         return new MainPage(context);
     }
 
     public int amountArticleAll() {
         int amountAll = amountArticle();
-        while (new InternalPage(context).nextPageButton.isDisplayed()) {
-            new InternalPage(context).getNextPageButton();
-            context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(0)));
+        while (nextPageButton.isDisplayed()) {
+            getNextPageButton();
+            context.wait.until(ExpectedConditions.stalenessOf(articlesCards.getLast()));
             amountAll = amountAll + amountArticle();
         }
         return amountAll;
+    }
+
+    public void getNextPageButton() {
+        nextPageButton.click();
+    }
+
+    public void getPrevPageButton() {
+        prevPageButton.click();
+    }
+
+    public CartPage getGoToCartFast(){
+        goToCart.click();
+        return new CartPage(context);
     }
 
 }

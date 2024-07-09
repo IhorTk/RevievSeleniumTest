@@ -27,4 +27,20 @@ public class CartPageTest extends BaseTest {
         assertEquals(2300, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
     }
+
+    @Test
+    public void remoteArticleFromCartTest(){
+        assertEquals(3, new CartPage(context)
+                .addThreeArticleToCartBase("monitor", "notebook", "phone")
+                .getGoToCart()
+                .rowsListOrdersTable.size());
+        assertEquals(2300, Long.parseLong(new CartPage(context)
+                .totalPrise.getText()));
+
+        assertEquals(2,new CartPage(context)
+                .remoteArticleFromCart("Samsung galaxy s7").rowsListOrdersTable.size());
+        assertEquals(1500, Long.parseLong(new CartPage(context)
+                .totalPrise.getText()));
+
+    }
 }

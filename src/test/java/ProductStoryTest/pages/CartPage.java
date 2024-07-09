@@ -14,17 +14,17 @@ public class CartPage extends BasePage {
         super(context);
     }
 
-    @FindBy(css = ".table-responsive")
-    public WebElement listOrdersTable;
-
     @FindBy(css = "td>a[onclick^='deleteItem']")
-    public WebElement deleteArtikleButton;
+    public List<WebElement> deleteArticleButton;
 
     @FindBy(css = "#totalp")
     public WebElement totalPrise;
 
     @FindBy(css = "#tbodyid>tr")
     public List<WebElement> rowsListOrdersTable;
+
+    @FindBy(css = "button.btn-success")
+    public WebElement goPlaceOrderButton;
 
 
     public MainPage addThreeArticleToCartBase(String nameArticle1, String nameArticle2, String nameArticle3) {
@@ -54,13 +54,26 @@ public class CartPage extends BasePage {
         }
     }
 
-//    public CartPage remoteArticleFromCart(String nameArticle){
-//        for(WebElement order:rowsListOrdersTable){
-//            if (order.getText().contains(nameArticle)){
-//                deleteArtikleButton.click();
-//            }
-//        }
-//    }
+    public CartPage remoteArticleFromCart(String nameArticle){
+        int count=0;
+        for(WebElement order:rowsListOrdersTable){
+            if (order.getText().contains(nameArticle)){
+                break;
+            }
+            count++;
+        }
+        deleteArticleButton.get(count).click();
+        context.wait.until(ExpectedConditions.stalenessOf(rowsListOrdersTable.getFirst()));
+        return new CartPage(context);
+    }
+
+
+    public PlaceOrderPage goToPlaceOrder(){
+        goPlaceOrderButton.click();
+        return new PlaceOrderPage(context);
+    }
+
+
 
 
 }
