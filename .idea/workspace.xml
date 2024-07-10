@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/PlaceOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/PlaceOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resurses/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GIT/ReviewSeleniumTest/src/main/resources",
+    "last_opened_file_path": "D:/GIT/ReviewTestNG",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -172,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaceOrderTest" />
         <item itemvalue="JUnit.MainPageTest" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.CreateNewUserTest.createNewUserFalseDataTest" />
         <item itemvalue="JUnit.CartPageTest" />
-        <item itemvalue="JUnit.PlaceOrderTest" />
       </list>
     </recent_temporary>
   </component>

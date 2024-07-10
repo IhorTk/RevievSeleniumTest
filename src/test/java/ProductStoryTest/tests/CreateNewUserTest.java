@@ -11,22 +11,22 @@ import org.junit.jupiter.api.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class CreateNewUserTest extends BaseTest {
-//    @Test
-//    @DisplayName("Попытка зарегистрировать существующего пользователя")
-//    @Description("Зарегистрировать нового пользователя с предоставленными данными. Проверить что пользователь " +
-//            "зарегистрирован и возможно осуществить вход с новым пользователем и его данные отображаются корректно")
-//    @Owner("Игорь Ткаченко")
-//    @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
-//    public void createUserTest() {
-//        assertEquals(ConfigurationReader.get("alertNewUserOk"), new CreationUserPage(context)
-//                .createUserBase());
-//
-//        assertEquals("Welcome " + ConfigurationReader.get("create_login"), new LoginPage(context)
-//                .loginAs(ConfigurationReader.get("create_login"), ConfigurationReader.get(
-//                        "create_password"))
-//                .getWelcomeText());
-//
-//    }
+    @Test
+    @DisplayName("Попытка зарегистрировать существующего пользователя")
+    @Description("Зарегистрировать нового пользователя с предоставленными данными. Проверить что пользователь " +
+            "зарегистрирован и возможно осуществить вход с новым пользователем и его данные отображаются корректно")
+    @Owner("Игорь Ткаченко")
+    @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
+    public void createUserTest() {
+        assertEquals(ConfigurationReader.get("alertNewUserOk"), new CreationUserPage(context)
+                .createUserBase());
+
+        assertEquals("Welcome " + ConfigurationReader.get("create_login"), new LoginPage(context)
+                .loginAs(ConfigurationReader.get("create_login"), ConfigurationReader.get(
+                        "create_password"))
+                .getWelcomeText());
+
+    }
 
     @Test
     @DisplayName("Попытка зарегистрировать существующего пользователя")
@@ -39,19 +39,19 @@ public class CreateNewUserTest extends BaseTest {
                 .createUserAs(ConfigurationReader.get("standard_login"), ConfigurationReader.get("standart_password")));
 
     }
-//
-//    @Test
-//    @DisplayName("Регистрация нового пользователя с данными заданными вручную")
-//    @Description("Зарегистрировать нового пользователя с данными заданными вручную. Проверить что пользователь " +
-//            "зарегистрирован и возможно осуществить вход с новым пользователем и его данные отображаются корректно")
-//    @Owner("Игорь Ткаченко")
-//    @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
-//    public void createNewUserAnyDataTest() {
-//        assertEquals(ConfigurationReader.get("alertNewUserOk"), new CreationUserPage(context)
-//                .createUserAs("ZZZZZZZ", "Zavtra"));
-//
-//        assertEquals("Welcome " + ConfigurationReader.get("create_login"), new LoginPage(context)
-//                .loginAs("ZZZZZZZ", "Zavtra")
-//                .getWelcomeText());
-//    }
+
+    @Test
+    @DisplayName("Регистрация нового пользователя с данными заданными вручную")
+    @Description("Зарегистрировать нового пользователя с данными заданными вручную. Проверить что пользователь " +
+            "зарегистрирован и возможно осуществить вход с новым пользователем и его данные отображаются корректно")
+    @Owner("Игорь Ткаченко")
+    @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
+    public void createNewUserAnyDataTest() {
+        assertEquals(ConfigurationReader.get("alertNewUserOk"), new CreationUserPage(context)
+                .createUserAs("GGGGGGGG", "JJJJJJJJJ"));
+
+        assertEquals("Welcome " + ConfigurationReader.get("create_login"), new LoginPage(context)
+                .loginAs("GGGGGGGG", "JJJJJJJJJ")
+                .getWelcomeText());
+    }
 }
