@@ -2,6 +2,7 @@ package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
 import ProductStoryTest.utils.ConfigurationReader;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,10 +28,12 @@ public class CreationUserPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"signInModal\"]//button[text()='Close']")
     public WebElement closeCreateNewUser;
 
+    @Step("Регистрация нового пользователя по заданным параметрам")
     public String createUserBase() {
         return createUserAs(ConfigurationReader.get("create_login"), ConfigurationReader.get("create_password"));
     }
 
+    @Step("Отработка уведомлений при регистрации нового пользователя")
     public String createUserAs(String login, String password) {
         createUser(login, password);
         context.wait.until(ExpectedConditions.alertIsPresent());
@@ -45,6 +48,7 @@ public class CreationUserPage extends BasePage {
         return alertTextNewUser;
     }
 
+    @Step("Заполнение реквизитов для регистрации")
     private void createUser(String login, String password) {
         signInButton.click();
         inputNewUserName.sendKeys(login);

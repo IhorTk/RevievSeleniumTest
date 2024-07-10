@@ -2,6 +2,7 @@ package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
 import ProductStoryTest.utils.ConfigurationReader;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,12 +32,14 @@ public class MessageSupportPage extends BasePage {
     public WebElement messageSendClose;
 
 
+    @Step("Отправка тестового сообщения")
     public String messageSupportSendBase() {
         return messageSupportSendAs(ConfigurationReader.get("user_email"), ConfigurationReader.get("standard_login"),
                 ConfigurationReader.get("contact_message"));
 
     }
 
+    @Step("Отправка сообщения и получение подтверждения")
     public String messageSupportSendAs(String emails, String names, String messages) {
         messageSupportSend(emails, names, messages);
         context.wait.until(ExpectedConditions.alertIsPresent());
@@ -45,6 +48,7 @@ public class MessageSupportPage extends BasePage {
     }
 
 
+    @Step("Заполнение полей для отправки сообщения")
     private void messageSupportSend(String email, String name, String message) {
         contactButton.click();
         userEmail.sendKeys(email);

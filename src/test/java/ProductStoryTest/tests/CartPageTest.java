@@ -20,7 +20,7 @@ public class CartPageTest extends BaseTest {
 
     public void addOneArticleToCartTest() {
         assertEquals(1, new CartPage(context)
-                .addOneArticleToCardBase("phone")
+                .addOneArticleToCartBase("phone")
                 .getGoToCart()
                 .rowsListOrdersTable.size());
         assertEquals(800, Long.parseLong(new CartPage(context)

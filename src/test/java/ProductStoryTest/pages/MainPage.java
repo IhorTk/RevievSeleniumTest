@@ -1,6 +1,7 @@
 package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -52,20 +53,24 @@ public class MainPage extends BasePage {
     public List<WebElement> articlesCards;
 
 
+    @Step("Переход в корзину")
     public CartPage getGoToCart() {
         goToCart.click();
         context.wait.until(ExpectedConditions.visibilityOfAllElements(new CartPage(context).rowsListOrdersTable));
         return new CartPage(context);
     }
 
+    @Step("Получение текста приветствия")
     public String getWelcomeText() {
         return welcomeText.getText();
     }
 
+    @Step("Получение количества товаров")
     public int amountArticle() {
         return articlesCards.size();
     }
 
+    @Step("Фильтрация отображения товаров по группам")
     public MainPage sortingArticles(String nameArticles) {
 
         switch (nameArticles.toLowerCase()) {
@@ -78,6 +83,7 @@ public class MainPage extends BasePage {
         return new MainPage(context);
     }
 
+    @Step("Подсчет количества товаров на нескольких страницах")
     public int amountArticleAll() {
         int amountAll = amountArticle();
         while (nextPageButton.isDisplayed()) {
@@ -88,10 +94,12 @@ public class MainPage extends BasePage {
         return amountAll;
     }
 
+    @Step("Нажатие кнопки перехода на следующую страницу")
     public void getNextPageButton() {
         nextPageButton.click();
     }
 
+    @Step("Быстрый переход в корзину")
     public CartPage getGoToCartFast() {
         goToCart.click();
         return new CartPage(context);

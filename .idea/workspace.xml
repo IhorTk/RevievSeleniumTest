@@ -5,52 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.allure/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/behaviors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/packages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/ArticlePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CreationUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CreateNewUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/PlaceOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/PlaceOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +106,7 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateNewUserTest.createNewUserFalseDataTest">
+  <component name="RunManager" selected="JUnit.PlaceOrderTest">
     <configuration name="CartPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
@@ -195,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaceOrderTest.negativPlaceOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaceOrderTest.okPlaceOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -205,7 +179,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
       <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.PlaceOrderTest" />
-      <option name="METHOD_NAME" value="negativPlaceOrderTest" />
+      <option name="METHOD_NAME" value="okPlaceOrderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaceOrderTest" />
+        <item itemvalue="JUnit.PlaceOrderTest.okPlaceOrderTest" />
         <item itemvalue="JUnit.CreateNewUserTest.createNewUserFalseDataTest" />
         <item itemvalue="JUnit.CartPageTest" />
         <item itemvalue="JUnit.CartPageTest.remoteArticleFromCartTest" />
-        <item itemvalue="JUnit.PlaceOrderTest.negativPlaceOrderTest" />
-        <item itemvalue="JUnit.PlaceOrderTest" />
       </list>
     </recent_temporary>
   </component>

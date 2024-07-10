@@ -2,6 +2,7 @@ package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
 import ProductStoryTest.utils.ConfigurationReader;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,21 +33,25 @@ public class LoginPage extends BasePage {
     public WebElement logOutButton;
 
 
+    @Step("Логирование зарегистрированного пользователя")
     public MainPage loginStandartUser() {
         return loginAs(ConfigurationReader.get("standard_login"), ConfigurationReader.get("standart_password"));
     }
 
+    @Step("Логирование пользователя")
     public MainPage loginAs(String login, String password) {
         login(login, password);
         context.wait.until(ExpectedConditions.visibilityOf(new MainPage(context).welcomeText));
         return new MainPage(context);
     }
 
+    @Step("Выход из логирования")
     public MainPage logOut() {
         logOutButton.click();
         return new MainPage(context);
     }
 
+    @Step("Логирование незарегистрированного пользователя")
     public String inCorrectDataUser(String login, String password) {
         login(login, password);
         context.wait.until(ExpectedConditions.alertIsPresent());
@@ -56,6 +61,7 @@ public class LoginPage extends BasePage {
         return messageAlert;
     }
 
+    @Step("Заполнение данных для логирования")
     private void login(String login, String password) {
         logInButton.click();
         inputUserName.sendKeys(login);

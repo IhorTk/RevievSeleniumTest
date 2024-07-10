@@ -1,6 +1,7 @@
 package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -24,7 +25,9 @@ public class InternalPage extends BasePage {
     public WebElement homeButton;
 
 
+    @Step("Пререход на главную страницу через навигационную панель")
     public MainPage getHomeButton() {
+
         homeButton.click();
         return new MainPage(context);
     }

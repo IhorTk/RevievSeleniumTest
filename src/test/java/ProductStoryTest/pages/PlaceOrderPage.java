@@ -2,6 +2,7 @@ package ProductStoryTest.pages;
 
 import ProductStoryTest.context.TestContext;
 import ProductStoryTest.utils.ConfigurationReader;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,23 +40,24 @@ public class PlaceOrderPage extends BasePage{
     @FindBy(css = "div.sweet-alert.showSweetAlert.visible")
     public WebElement itogPurschase;
 
-//    @FindBy(css = "div.sweet-alert.showSweetAlert")
-//    public WebElement itogPurschase;
-
     @FindBy(css = "button.confirm.btn-primary")
     public WebElement confirmPurchaseButton;
 
 
+    @Step("Подтверджение заказа")
     public MainPage confirmPurchase(){
         confirmPurchaseButton.click();
         return new MainPage(context);
     }
 
+    @Step("Оформление заказа со стандартными данными")
     public WebElement inputDataPlaceOrderBase(){
         return inputDataPlaceOrderAs(ConfigurationReader.get("name"),ConfigurationReader.get("country"),
                 ConfigurationReader.get("city"),ConfigurationReader.get("card"),
                 ConfigurationReader.get("month"),ConfigurationReader.get("year"));
     }
+
+    @Step("Заполнение полей при оформлении заказа и ожидание ошибки")
     public String inputNoCompleteDataPlaceOrderAs(String name, String country, String city, String card, String month, String year){
         inputDataPlaceOrder(name,country,city,card,month,year);
         context.wait.until(ExpectedConditions.alertIsPresent());
@@ -63,12 +65,15 @@ public class PlaceOrderPage extends BasePage{
         return context.alert.getText();
     }
 
+    @Step("Оформление заказа ожидание подтверждения")
     public WebElement inputDataPlaceOrderAs(String name, String country, String city, String card, String month, String year){
+        context.wait.until(ExpectedConditions.elementToBeSelected(inputName));
         inputDataPlaceOrder(name,country,city,card,month,year);
         context.wait.until(ExpectedConditions.visibilityOf(itogPurschase));
         return itogPurschase;
     }
 
+    @Step("Заполнение полей при оформлении заказа")
     private void inputDataPlaceOrder(String name, String country, String city, String card, String month, String year){
         inputName.sendKeys(name);
         inputCountry.sendKeys(country);
