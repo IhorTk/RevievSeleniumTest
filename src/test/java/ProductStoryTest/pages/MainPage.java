@@ -79,7 +79,7 @@ public class MainPage extends BasePage {
             case "notebook" -> sortItemNotebook.click();
             default -> throw new IllegalStateException("Unexpected value: " + nameArticles.toLowerCase());
         }
-        context.wait.until(ExpectedConditions.stalenessOf(articlesCards.getLast()));
+        context.wait.until(ExpectedConditions.stalenessOf(articlesCards.get(1)));
         return new MainPage(context);
     }
 

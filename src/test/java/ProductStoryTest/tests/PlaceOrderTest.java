@@ -58,9 +58,9 @@ public class PlaceOrderTest extends BaseTest{
     }
 
     @Test
-    @DisplayName("Попытка оформления заказа без выбора товара и заполнения данных")
+    @DisplayName("Попытка оформления заказа без выбора товара и заполнения заполнение некорректных данных")
     @Description("С главной страницы перейти в корзину и на страницу оформления заказа."+
-            " Заполнить поля Name: и Credit card:. Ожидается, что оформление не будет завершено, в противном " +
+            " Ожидается, что оформление не будет завершено, в противном " +
             "случае оформление будет завершено без данных и будет осуществлен переход на главную страницу")
     @Owner("Игорь Ткаченко")
     @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
@@ -68,7 +68,7 @@ public class PlaceOrderTest extends BaseTest{
         assertTrue(new MainPage(context)
                 .getGoToCartFast()
                 .goToPlaceOrder()
-                .inputDataPlaceOrderAs(" ","",""," ","","").getText()
+                .inputDataPlaceOrderAs("NNNNN00 ","HHHHHHH","ZZZZZ","HHHHHHH ","LK","DFGH").getText()
                 .contains(ConfigurationReader.get("thanks_message")));
         assertTrue(new PlaceOrderPage(context)
                 .itogPurschase.getText()

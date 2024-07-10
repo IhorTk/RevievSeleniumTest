@@ -67,7 +67,6 @@ public class PlaceOrderPage extends BasePage{
 
     @Step("Оформление заказа ожидание подтверждения")
     public WebElement inputDataPlaceOrderAs(String name, String country, String city, String card, String month, String year){
-        context.wait.until(ExpectedConditions.elementToBeSelected(inputName));
         inputDataPlaceOrder(name,country,city,card,month,year);
         context.wait.until(ExpectedConditions.visibilityOf(itogPurschase));
         return itogPurschase;

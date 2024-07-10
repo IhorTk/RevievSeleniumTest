@@ -28,10 +28,10 @@ public class BaseTest {
 
     @AfterEach
     public void afterEach() {
-//        TakesScreenshot takesScreenshot = (TakesScreenshot) context.driver;
-//        byte[] screenshot = takesScreenshot.getScreenshotAs(OutputType.BYTES);
+        TakesScreenshot takesScreenshot = (TakesScreenshot) context.driver;
+        byte[] screenshot = takesScreenshot.getScreenshotAs(OutputType.BYTES);
 
-//        Allure.addAttachment("Скриншот", new ByteArrayInputStream(screenshot));
+        Allure.addAttachment("Скриншот", new ByteArrayInputStream(screenshot));
 
         if (context.driver != null) {
             context.driver.quit();
