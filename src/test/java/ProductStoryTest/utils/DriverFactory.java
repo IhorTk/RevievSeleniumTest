@@ -19,11 +19,11 @@ public class DriverFactory {
                 ChromeOptions options = new ChromeOptions();
                 if (ConfigurationReader.get("headless").equalsIgnoreCase("true")) {
                     options.addArguments("--headless");
-                    options.addArguments("--no-sandbox");
-                    options.addArguments("--disable-infobars");
-                    options.addArguments("--disable-popur-bloking");
-                    options.addArguments("--disable-notifications");
-                    options.addArguments("--lang=en-en");
+//                    options.addArguments("--no-sandbox");
+//                    options.addArguments("--disable-infobars");
+//                    options.addArguments("--disable-popur-bloking");
+//                    options.addArguments("--disable-notifications");
+//                    options.addArguments("--lang=en-en");
                 }
                 driver = new ChromeDriver(options);
                 if (ConfigurationReader.get("maximize").equalsIgnoreCase("true")) {
