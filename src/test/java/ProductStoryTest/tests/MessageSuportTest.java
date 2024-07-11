@@ -7,7 +7,9 @@ import io.qameta.allure.Owner;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import static org.testng.AssertJUnit.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class MessageSuportTest extends BaseTest {
     @Test
