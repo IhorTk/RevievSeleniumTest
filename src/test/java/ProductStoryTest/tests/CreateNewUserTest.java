@@ -48,10 +48,10 @@ public class CreateNewUserTest extends BaseTest {
     @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
     public void createNewUserAnyDataTest() {
         assertEquals(ConfigurationReader.get("alertNewUserOk"), new CreationUserPage(context)
-                .createUserAs("GGGGGGGG", "JJJJJJJJJ"));
+                .createUserAs("HHHHHHHhhh", "KlKlKlkl"));
 
-        assertEquals("Welcome " + ConfigurationReader.get("create_login"), new LoginPage(context)
-                .loginAs("GGGGGGGG", "JJJJJJJJJ")
+        assertEquals("Welcome " + "HHHHHHHhhh", new LoginPage(context)
+                .loginAs("HHHHHHHhhh", "KlKlKlkl")
                 .getWelcomeText());
     }
 }
