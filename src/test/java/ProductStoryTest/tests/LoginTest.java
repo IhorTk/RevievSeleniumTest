@@ -42,6 +42,6 @@ public class LoginTest extends BaseTest {
     public void inCorrectUserPasswordTest() {
         assertEquals(ConfigurationReader.get("alertWrongPassword"),
                 new LoginPage(context)
-                        .inCorrectDataUser(ConfigurationReader.get("standard_login"), "hgkghk"));
+                        .inCorrectDataUser(ConfigurationReader.get("standard_login"), "hgkgjkt"));
     }
 }
