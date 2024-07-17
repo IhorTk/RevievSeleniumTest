@@ -1,5 +1,7 @@
 package ProductStoryTest.tests;
 
+import ProductStoryTest.pages.InternalPage;
+import ProductStoryTest.pages.LoginPage;
 import ProductStoryTest.pages.MessageSupportPage;
 import ProductStoryTest.utils.ConfigurationReader;
 import io.qameta.allure.Link;
@@ -7,6 +9,9 @@ import io.qameta.allure.Owner;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -30,5 +35,16 @@ public class MessageSuportTest extends BaseTest {
     public void messageSuportTestAny() {
         assertEquals(ConfigurationReader.get("alertMessageOk"), new MessageSupportPage(context)
                 .messageSupportSendAs("ggg@mail.com", "JohnDoe", "Hallo!!!"));
+    }
+
+    @Test
+    public void listNavigation(){
+        new LoginPage(context).loginStandartUser();
+        List<WebElement> list=new InternalPage(context).navigationButtonPanel;
+        System.out.println("list.size() = " + list.size());
+        for(WebElement el:list){
+            System.out.println("el.getText() = " + el.getText());
+        }
+
     }
 }

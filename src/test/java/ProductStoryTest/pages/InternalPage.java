@@ -5,6 +5,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class InternalPage extends BasePage {
 
     public InternalPage(TestContext context) {
@@ -12,8 +14,8 @@ public class InternalPage extends BasePage {
         super(context);
     }
 
-    @FindBy(css = "#navbarExample")
-    public WebElement navigationButtonPanel;
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li")
+    public List<WebElement> navigationButtonPanel;
 
     @FindBy(css = ".navbar-brand#nava")
     public WebElement logBrandHeader;
