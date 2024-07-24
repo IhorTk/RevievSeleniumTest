@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2024_12_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2024_12_33__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/MessageSuportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,54 +52,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "JUnit.CartPageTest (1).executor": "Run",
-    "JUnit.CartPageTest.adaArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addOneArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addPhoneToCartTest.executor": "Run",
-    "JUnit.CartPageTest.addThreeArticleToCartTest.executor": "Run",
-    "JUnit.CartPageTest.executor": "Run",
-    "JUnit.CartPageTest.remoteArticleFromCartTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserAnyDataTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor": "Run",
-    "JUnit.CreateNewUserTest.createNewUserTest.executor": "Debug",
-    "JUnit.CreateNewUserTest.createUserTest.executor": "Run",
-    "JUnit.CreateNewUserTest.executor": "Run",
-    "JUnit.LoginTest.executor": "Run",
-    "JUnit.LoginTest.inCorrectUserNameTest.executor": "Run",
-    "JUnit.LoginTest.inCorrectUserPasswordTest.executor": "Run",
-    "JUnit.LoginTest.normalLoginTest.executor": "Run",
-    "JUnit.MainPageTest.amountArticleAllTest.executor": "Run",
-    "JUnit.MainPageTest.amountArticleToPage.executor": "Run",
-    "JUnit.MainPageTest.executor": "Run",
-    "JUnit.MainPageTest.sortingArticleTest.executor": "Run",
-    "JUnit.MessageSuportTest.executor": "Run",
-    "JUnit.MessageSuportTest.listNavigation.executor": "Run",
-    "JUnit.MessageSuportTest.messageSuportTestAny.executor": "Run",
-    "JUnit.PlaceOrderTest.executor": "Run",
-    "JUnit.PlaceOrderTest.negativPlaceOrderTest.executor": "Run",
-    "JUnit.PlaceOrderTest.noCompleteDataPlaceOrderTest.executor": "Run",
-    "JUnit.PlaceOrderTest.okPlaceOrderTest.executor": "Run",
-    "JUnit.ProbaTest.getP.executor": "Run",
-    "JUnit.ProbaTest.getPropertys.executor": "Run",
-    "JUnit.ProbaTest.searhArt.executor": "Run",
-    "JUnit.ProductStoryTest in ReviewSeleniumTest.executor": "Run",
-    "JUnit.tests in ReviewSeleniumTest (1).executor": "Run",
-    "JUnit.tests in ReviewSeleniumTest.executor": "Run",
-    "Maven.ReviewSeleniumTest [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GIT/CucumberStart",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;JUnit.CartPageTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.adaArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addOneArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addPhoneToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.addThreeArticleToCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.printCart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.printTableCart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartPageTest.remoteArticleFromCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserAnyDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserFalseDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.createNewUserTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CreateNewUserTest.createUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateNewUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.inCorrectUserNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.inCorrectUserPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.normalLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.amountArticleAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.amountArticleToPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainPageTest.sortingArticleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageSuportTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageSuportTest.listNavigation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageSuportTest.messageSuportTestAny.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PlaceOrderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PlaceOrderTest.negativPlaceOrderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PlaceOrderTest.noCompleteDataPlaceOrderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PlaceOrderTest.okPlaceOrderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.getP.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.getPropertys.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProbaTest.searhArt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductStoryTest in ReviewSeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests in ReviewSeleniumTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests in ReviewSeleniumTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ReviewSeleniumTest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ReviewSeleniumTest [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GIT/CucumberStart&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GIT\ReviewSeleniumTest\src\main\resources" />
@@ -110,8 +116,8 @@
       <recent name="D:\GIT\ReviewSeleniumTest\src\test\java\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessageSuportTest.listNavigation">
-    <configuration name="CartPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CartPageTest.addOneArticleToCartTest">
+    <configuration name="CartPageTest.addOneArticleToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -121,13 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
       <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="addOneArticleToCartTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartPageTest.addThreeArticleToCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -136,13 +142,46 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
+      <option name="METHOD_NAME" value="addThreeArticleToCartTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartPageTest.printCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
+      <option name="METHOD_NAME" value="printCart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartPageTest.printTableCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReviewSeleniumTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductStoryTest.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
+      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.CartPageTest" />
+      <option name="METHOD_NAME" value="printTableCart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest.amountArticleAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReviewSeleniumTest" />
       <extension name="coverage">
         <pattern>
@@ -152,38 +191,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
       <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MainPageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageSuportTest.listNavigation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.MessageSuportTest" />
-      <option name="METHOD_NAME" value="listNavigation" />
+      <option name="METHOD_NAME" value="amountArticleAllTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaceOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReviewSeleniumTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProductStoryTest.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProductStoryTest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ProductStoryTest.tests.PlaceOrderTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,19 +240,19 @@
     <list>
       <item itemvalue="JUnit.ProductStoryTest in ReviewSeleniumTest" />
       <item itemvalue="JUnit.tests in ReviewSeleniumTest" />
-      <item itemvalue="JUnit.MessageSuportTest.listNavigation" />
-      <item itemvalue="JUnit.CartPageTest" />
-      <item itemvalue="JUnit.LoginTest" />
-      <item itemvalue="JUnit.MainPageTest" />
-      <item itemvalue="JUnit.PlaceOrderTest" />
+      <item itemvalue="JUnit.CartPageTest.addOneArticleToCartTest" />
+      <item itemvalue="JUnit.CartPageTest.printCart" />
+      <item itemvalue="JUnit.CartPageTest.addThreeArticleToCartTest" />
+      <item itemvalue="JUnit.CartPageTest.printTableCart" />
+      <item itemvalue="JUnit.MainPageTest.amountArticleAllTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MessageSuportTest.listNavigation" />
-        <item itemvalue="JUnit.PlaceOrderTest" />
-        <item itemvalue="JUnit.MainPageTest" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.CartPageTest" />
+        <item itemvalue="JUnit.CartPageTest.addOneArticleToCartTest" />
+        <item itemvalue="JUnit.CartPageTest.printCart" />
+        <item itemvalue="JUnit.CartPageTest.addThreeArticleToCartTest" />
+        <item itemvalue="JUnit.CartPageTest.printTableCart" />
+        <item itemvalue="JUnit.MainPageTest.amountArticleAllTest" />
       </list>
     </recent_temporary>
   </component>

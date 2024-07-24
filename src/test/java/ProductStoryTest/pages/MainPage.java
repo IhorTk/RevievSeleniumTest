@@ -55,7 +55,7 @@ public class MainPage extends BasePage {
     @Step("Переход в корзину")
     public CartPage getGoToCart() {
         goToCart.click();
-        context.wait.until(ExpectedConditions.visibilityOfAllElements(new CartPage(context).rowsListOrdersTable));
+        context.wait.until(ExpectedConditions.visibilityOfAllElements(new CartPage(context).rowsTableCartHeadless));
         return new CartPage(context);
     }
 
@@ -85,6 +85,7 @@ public class MainPage extends BasePage {
     @Step("Подсчет количества товаров на нескольких страницах")
     public int amountArticleAll() {
         int amountAll = amountArticle();
+        System.out.println("amountAll = " + amountAll);
         while (nextPageButton.isDisplayed()) {
             getNextPageButton();
             context.wait.until(ExpectedConditions.stalenessOf(articlesCards.getLast()));

@@ -15,11 +15,12 @@
         <maven.compiler.target>21</maven.compiler.target>
         <maven-surefire-plugin_version>3.3.0</maven-surefire-plugin_version>
         <maven-resources-plugin_version>3.2.0</maven-resources-plugin_version>
-        <maven-compiler-plugin_version>3.11.0</maven-compiler-plugin_version>
+        <maven-compiler-plugin_version>3.13.0</maven-compiler-plugin_version>
 
         <junit_version>5.10.1</junit_version>
         <junit-jupiter-api_version>5.10.1</junit-jupiter-api_version>
         <junit-jupiter-engine_version>5.10.1</junit-jupiter-engine_version>
+        <junit-jupiter-params_version>5.11.0-M2</junit-jupiter-params_version>
 
         <allure-junit5_version>2.25.0</allure-junit5_version>
         <allure-bom_version>2.25.0</allure-bom_version>
@@ -153,7 +154,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>5.11.0-M2</version>
+            <version>${junit-jupiter-params_version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

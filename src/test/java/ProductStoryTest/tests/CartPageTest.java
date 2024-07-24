@@ -2,10 +2,16 @@ package ProductStoryTest.tests;
 
 
 import ProductStoryTest.pages.CartPage;
+
 import io.qameta.allure.*;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+
+import java.util.List;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CartPageTest extends BaseTest {
@@ -20,16 +26,14 @@ public class CartPageTest extends BaseTest {
         assertEquals(1, new CartPage(context)
                 .addOneArticleToCartBase("phone")
                 .getGoToCart()
-                .rowsListOrdersTable.size());
+                .rowsTableCartHeadless.size());
         assertEquals(800, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
-
-
     }
 
     @Test
     @DisplayName("Добавление трех единиц товара в корзину")
-    @Description("Добавить в корзину Samsung galaxy s7 - стоимость 800$, MacBook Pro - стоимость 1100$,"+
+    @Description("Добавить в корзину Samsung galaxy s7 - стоимость 800$, MacBook Pro - стоимость 1100$," +
             " Apple monitor 24 - стоимость 400$. Проверить что товары добавлены в корзину и их общая стоимость 2300$")
     @Owner("Игорь Ткаченко")
     @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
@@ -37,15 +41,17 @@ public class CartPageTest extends BaseTest {
         assertEquals(3, new CartPage(context)
                 .addThreeArticleToCartBase("monitor", "notebook", "phone")
                 .getGoToCart()
-                .rowsListOrdersTable.size());
+                .rowsTableCartHeadless.size());
+
         assertEquals(2300, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
+
     }
 
     @Test
     @DisplayName("Удаление одной единицы товара из корзины")
-    @Description("Добавить в корзину Samsung galaxy s7 - стоимость 800$, MacBook Pro - стоимость 1100$,"+
-            " Apple monitor 24 - стоимость 400$. Проверить что товары добавлены в корзину и их общая стоимость 2300$."+
+    @Description("Добавить в корзину Samsung galaxy s7 - стоимость 800$, MacBook Pro - стоимость 1100$," +
+            " Apple monitor 24 - стоимость 400$. Проверить что товары добавлены в корзину и их общая стоимость 2300$." +
             "Удалить из корзины Samsung galaxy s7 - стоимость 800$. Проверить, что в корзине 2 товара. Общая стоимость 1500$")
     @Owner("Игорь Ткаченко")
     @Link(name = "PRODUCT STORE", url = "https://www.demoblaze.com/")
@@ -53,14 +59,28 @@ public class CartPageTest extends BaseTest {
         assertEquals(3, new CartPage(context)
                 .addThreeArticleToCartBase("monitor", "notebook", "phone")
                 .getGoToCart()
-                .rowsListOrdersTable.size());
+                .rowsTableCartHeadless.size());
         assertEquals(2300, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
 
         assertEquals(2, new CartPage(context)
-                .remoteArticleFromCart("Samsung galaxy s7").rowsListOrdersTable.size());
+                .remoteArticleFromCart("Samsung galaxy s7").rowsTableCartHeadless.size());
         assertEquals(1500, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
+    }
+
+    @Test
+    public void printCart() {
+        new CartPage(context).addThreeArticleToCartBase("monitor", "notebook", "phone").getGoToCart();
+
+        Map<String, String> product1 =
+                new CartPage(context).getMapTableProduct1(new CartPage(context).tableCartProduct, "Title",
+                        "Price");
+        for (Map.Entry<String, String> entry : product1.entrySet()) {
+            System.out.printf("Key %s,   Value %s\n", entry.getKey(), entry.getValue());
+        }
+
 
     }
+
 }
