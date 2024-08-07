@@ -28,10 +28,6 @@ public class MessageSupportPage extends BasePage {
     @FindBy(css = "button.btn-primary[onclick=\"send()\"]")
     public WebElement messageSendOk;
 
-    @FindBy(xpath = "//*[@id=\"exampleModal\"]//button[text()='Close']")
-    public WebElement messageSendClose;
-
-
     @Step("Отправка тестового сообщения")
     public String messageSupportSendBase() {
         return messageSupportSendAs(ConfigurationReader.get("user_email"), ConfigurationReader.get("standard_login"),

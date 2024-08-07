@@ -8,10 +8,6 @@ import jdk.jfr.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
-import java.util.List;
-import java.util.Map;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CartPageTest extends BaseTest {
@@ -67,20 +63,6 @@ public class CartPageTest extends BaseTest {
                 .remoteArticleFromCart("Samsung galaxy s7").rowsTableCartHeadless.size());
         assertEquals(1500, Long.parseLong(new CartPage(context)
                 .totalPrise.getText()));
-    }
-
-    @Test
-    public void printCart() {
-        new CartPage(context).addThreeArticleToCartBase("monitor", "notebook", "phone").getGoToCart();
-
-        Map<String, String> product1 =
-                new CartPage(context).getMapTableProduct1(new CartPage(context).tableCartProduct, "Title",
-                        "Price");
-        for (Map.Entry<String, String> entry : product1.entrySet()) {
-            System.out.printf("Key %s,   Value %s\n", entry.getKey(), entry.getValue());
-        }
-
-
     }
 
 }

@@ -34,9 +34,6 @@ public class PlaceOrderPage extends BasePage{
     @FindBy(css = "button.btn-primary[onclick='purchaseOrder()']")
     public WebElement okPurchaseButton;
 
-    @FindBy(xpath = "//*[@id=\"orderModal\"]//button[text()='Close']")
-    public WebElement closePlaceOrder;
-
     @FindBy(css = "div.sweet-alert.showSweetAlert.visible")
     public WebElement itogPurschase;
 

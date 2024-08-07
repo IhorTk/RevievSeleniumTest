@@ -26,12 +26,6 @@ public class LoginPage extends BasePage {
     @FindBy(css = "button.btn-primary[onclick='logIn()']")
     public WebElement inputLogin;
 
-    @FindBy(xpath = "//*[@id=\"logInModal\"]//button[contains(text(),'Close')]")
-    public WebElement logInCancell;
-
-    @FindBy(css = "#logout2")
-    public WebElement logOutButton;
-
 
     @Step("Логирование зарегистрированного пользователя")
     public MainPage loginStandartUser() {
@@ -42,12 +36,6 @@ public class LoginPage extends BasePage {
     public MainPage loginAs(String login, String password) {
         login(login, password);
         context.wait.until(ExpectedConditions.visibilityOf(new MainPage(context).welcomeText));
-        return new MainPage(context);
-    }
-
-    @Step("Выход из логирования")
-    public MainPage logOut() {
-        logOutButton.click();
         return new MainPage(context);
     }
 

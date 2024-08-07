@@ -53,13 +53,6 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <properties>
-                        <configurationParameters>
-                            junit.jupiter.execution.parallel.enabled=false
-<!--                            junit.jupiter.execution.parallel.mode.default=concurrent-->
-                            junit.jupiter.execution.parallel.mode.classes.default=concurrent
-                            junit.jupiter.execution.parallel.config.strategy=fixed
-                            junit.jupiter.execution.parallel.config.fixed.parallelism=4
-                        </configurationParameters>
                         <property>
                             <name>listener</name>
                             <value>io.qameta.allure.junit5.AllureJunit5</value>
@@ -196,18 +189,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>7.10.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.testng</groupId>-->
-        <!--            <artifactId>testng</artifactId>-->
-        <!--            <version>7.10.2</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
     </dependencies>
 
     <dependencyManagement>

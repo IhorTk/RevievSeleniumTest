@@ -14,15 +14,6 @@ public class MainPage extends BasePage {
         super(context);
     }
 
-    @FindBy(css = ".carousel-inner")
-    public WebElement carouselInner;
-
-    @FindBy(css = ".carousel-control-next-icon")
-    public WebElement carouselNextIcon;
-
-    @FindBy(css = "carousel-control-prev-icon")
-    public WebElement carouselPrevIcon;
-
     @FindBy(css = ".list-group-item#cat")
     public WebElement categoriesButton;
 
@@ -44,13 +35,8 @@ public class MainPage extends BasePage {
     @FindBy(css = ".page-link#next2")
     public WebElement nextPageButton;
 
-    @FindBy(css = ".page-link#prev2")
-    public WebElement prevPageButton;
-
-
     @FindBy(css = "a.hrefch")
     public List<WebElement> articlesCards;
-
 
     @Step("Переход в корзину")
     public CartPage getGoToCart() {

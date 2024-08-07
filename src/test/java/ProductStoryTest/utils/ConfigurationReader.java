@@ -13,7 +13,7 @@ public class ConfigurationReader {
 
     static {
         try {
-            String patch = "src/test/resurses/configuration.properties";
+            String patch = "src/test/resources/configuration.properties";
             FileInputStream inputStream = new FileInputStream(patch);
 
             properties = new Properties();
