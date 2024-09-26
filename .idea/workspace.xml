@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/InternalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/MessageSupportPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/pages/PlaceOrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/tests/CartPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resurses/allure.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resurses/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resurses/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +32,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:IhorTk/ReviewSeleniumTest.git&quot;,
-    &quot;accountId&quot;: &quot;b10727fc-274c-4f45-ae15-1883224abceb&quot;
+    &quot;accountId&quot;: &quot;b4b6541f-28af-47ae-a412-bb3f32b5ed8e&quot;
   }
 }</component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -247,8 +236,8 @@
       <item itemvalue="JUnit.ProductStoryTest in ReviewSeleniumTest" />
       <item itemvalue="JUnit.tests in ReviewSeleniumTest" />
       <item itemvalue="JUnit.CartPageTest.addOneArticleToCartTest" />
-      <item itemvalue="JUnit.CartPageTest.printCart" />
       <item itemvalue="JUnit.CartPageTest.addThreeArticleToCartTest" />
+      <item itemvalue="JUnit.CartPageTest.printCart" />
       <item itemvalue="JUnit.CartPageTest.printTableCart" />
       <item itemvalue="JUnit.MainPageTest.amountArticleAllTest" />
     </list>
