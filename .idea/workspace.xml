@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="" />
+    <list default="true" id="1305fe9c-2068-4d69-8258-74baa2691b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductStoryTest/utils/DriverFactory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

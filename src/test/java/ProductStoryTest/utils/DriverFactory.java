@@ -15,11 +15,11 @@ public class DriverFactory {
         WebDriver driver;
         switch (browser) {
             case "chrome" -> {
-                WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver().driverVersion("128.0.6613.85").setup();
                 ChromeOptions options = new ChromeOptions();
                 if (ConfigurationReader.get("headless").equalsIgnoreCase("true")) {
                     options.addArguments("--headless");
-                    options.addArguments("--no-sandbox");
+//                    options.addArguments("--no-sandbox");
 //                    options.addArguments("--disable-infobars");
 //                    options.addArguments("--disable-popur-bloking");
 //                    options.addArguments("--disable-notifications");
@@ -38,7 +38,7 @@ public class DriverFactory {
                 return driver;
             }
             case "edge" -> {
-                if (!System.getProperty("os.name").equalsIgnoreCase("windows")) {
+                if (System.getProperty("os.name").equalsIgnoreCase("windows")) {
                     throw new WrongThreadException("Ваша операционная система не поддерживает Edge");
                 }
                 WebDriverManager.edgedriver().setup();
